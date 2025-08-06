@@ -303,19 +303,3 @@ section {
         align-items: center; /* Centrar los elementos */
     }
 }
-
-/* Estilos para dispositivos muy pequeños (teléfonos en modo vertical) */
-@media (max-width: 576px) {
-    .timeline-item .timeline-icon {
-        font-size: 18px; /* Reducción extra de los íconos */
-        padding: 10px; /* Menos espacio alrededor del ícono */
-    }
-
-    .timeline-item h5 {
-        font-size: 1rem; /* Reducir el tamaño de la fuente */
-    }
-
-    .timeline-item p {
-        font-size: 0.9rem; /* Reducir el tamaño del texto */
-    }
-}

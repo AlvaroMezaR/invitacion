@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Banner de presentación -->
+    <header class="text-center py-5 banner-presentacion">
+        <div class="container">
+            <h1 class="display-4">¡Estás invitado a nuestra boda!</h1>
+            <h2 class="display-6">Nos encantaría que nos acompañaras en este día especial</h2>
+            <h3 id="animacion" class="display-5">Contamos los días para este momento único...</h3>
+        </div>
+    </header>
+
+    <!-- Imagen de la pareja -->
+    <section class="image-pareja text-center py-5">
+        <img src="imagenes/pareja_1.jpg" alt="Pareja" class="img-fluid" width="100%">
+    </section>
+
+    <!-- Sección de agradecimientos -->
+    <section class="agradecimientos text-center py-5">
+        <div class="container">
+            <h2 class="display-5 mb-4">Nuestra Historia</h2>
+            <p class="lead mb-4">Desde el primer día, sabíamos que estábamos destinados a estar juntos. A lo largo de los años hemos crecido y aprendido mucho, y estamos emocionados por todo lo que el futuro nos depara.</p>
+
+            <h3 class="mt-4">Agradecimientos</h3>
+            <p class="mb-4">Queremos agradecer a nuestros padres, que siempre nos han apoyado y nos han mostrado el verdadero significado del amor. ¡Gracias por su amor incondicional!</p>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-5 mb-4">
+                    <h4><strong>Padres de la Novia:</strong></h4>
+                    <ul class="list-unstyled">
+                        <li>Cecilia Flores Vázquez</li>
+                        <li>Eugenio Córdova Cruz</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-5 mb-4">
+                    <h4><strong>Padres del Novio:</strong></h4>
+                    <ul class="list-unstyled">
+                        <li>Mónica Olivo</li>
+                        <li>Gerardo Martínez Gaspar</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-4">Padrinos de Velación</h3>
+            <ul class="list-unstyled">
+                <li>María Luisa Ortega Hernández</li>
+                <li>Mario López Martínez</li>
+            </ul>
+
+            <p class="lead mt-4">Gracias a todos por ser parte de este día tan especial.</p>
+        </div>
+    </section>
+
+    <!-- Detalles del evento -->
+    <section class="detalles-evento text-center py-5">
+        <div style="height: 400px; overflow: hidden;">
+            <img src="imagenes/pareja_2.jpg" alt="Pareja" class="img-fluid w-100" style="height: 100%; object-fit: cover; object-position: top;">
+        </div>
+
+        <div class="container">
+            <h2 class="display-4 mt-4">Detalles de la Boda</h2>
+            <p class="h4">Novia: Ariana</p>
+            <p class="h4">Novio: Óscar</p>
+            <p class="h4">Fecha: 29 de Noviembre de 2025</p>
+            <p class="h4">Hora: 15:00</p>
+            <p class="h4">Lugar: Parroquia de San Juan Evangelista</p>
+            <p class="h5">
+            <a href="https://www.google.com/maps?q=Av.+Cdad.+de+las+Flores+70,+Revolución,+91100+Xalapa-Enríquez,+Ver." target="_blank" rel="noopener noreferrer">
+                Av. Cdad. de las Flores 70, Revolución, 91100 Xalapa-Enríquez, Ver.
+            </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Recepción -->
+    <section class="detalles-adicionales text-center py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4">Recepción</h2>
+            <p class="lead">Después de la ceremonia, acompáñanos a celebrar en:</p>
+            <p class="h4">Salón Campestre Acosta</p>
+            <p class="h5">
+            <a href="https://www.google.com/maps?q=Libertad+11,+Banderilla,+Veracruz" target="_blank" rel="noopener noreferrer">
+                Libertad #11, Banderilla
+            </a>
+            </p>
+
+    </section>
+
+    <!-- Cuenta regresiva -->
+    <section class="contador text-center py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4 mb-4">¡Faltan...</h2>
+            <div id="contador" class="display-5 mb-4 d-flex flex-column flex-sm-row justify-content-center">
+                <div class="contador-item mx-4">
+                    <p class="h2" id="dias">0</p>
+                    <p class="h4">Días</p>
+                </div>
+                <div class="contador-item mx-4">
+                    <p class="h2" id="horas">0</p>
+                    <p class="h4">Horas</p>
+                </div>
+                <div class="contador-item mx-4">
+                    <p class="h2" id="minutos">0</p>
+                    <p class="h4">Minutos</p>
+                </div>
+                <div class="contador-item mx-4">
+                    <p class="h2" id="segundos">0</p>
+                    <p class="h4">Segundos</p>
+                </div>
+            </div>
+            <p class="lead mt-4">¡Cada segundo nos acerca más a nuestro día especial!</p>
+        </div>
+    </section>
+
+        <!-- Imagen de la pareja -->
+    <section class="image-pareja text-center py-5">
+        <div style="height: 380px; overflow: hidden;">
+            <img src="imagenes/pareja_3.jpg" alt="Pareja" class="img-fluid w-100" style="height: 100%; object-fit: cover; object-position: bottom;">
+        </div>
+    </section>
+
+    <!-- Detalles adicionales -->
+    <section class="detalles-adicionales text-center py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4">Detalles del Evento</h2>
+            <br>
+            <div class="row">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dress Code</h5>
+                        <p class="card-text">Ropa casual. ¡Queremos que esten comodos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensaje de cierre -->
+    <section class="esperamos text-center py-5">
+        <div class="container">
+            <h2 class="display-4">Esperamos tu Asistencia</h2>
+            <p class="lead">El destino, Dios y la vida nos juntaron y ahora permaneceremos unidos por siempre. El comienzo de esta nueva etapa inicia ahora y la queremos compartir contigo.</p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="countdown.js"></script>
+</body>
+</html>
