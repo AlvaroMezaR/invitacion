@@ -1,7 +1,7 @@
 // Función para actualizar el contador
 function updateCountdown() {
-    // Definir la fecha de la boda
-    const weddingDate = new Date("2025-06-15T17:00:00").getTime();
+    // Definir la fecha de la boda (29 de noviembre de 2025 a la 13:00)
+    const weddingDate = new Date("2025-11-29T13:00:00").getTime();
     
     // Obtener la fecha y hora actual
     const now = new Date().getTime();

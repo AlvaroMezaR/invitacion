@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!-- Enlace al CSS personalizado -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -24,64 +23,85 @@
 
     <!-- Imagen de la pareja -->
     <section class="image-pareja text-center py-5">
-        <img src="imagenes/pareja_1.png" alt="Pareja" class="img-fluid" width="100%">
+        <img src="imagenes/pareja_1.jpg" alt="Pareja" class="img-fluid" width="100%">
     </section>
 
+    <!-- Sección de agradecimientos -->
     <section class="agradecimientos text-center py-5">
         <div class="container">
             <h2 class="display-5 mb-4">Nuestra Historia</h2>
             <p class="lead mb-4">Desde el primer día, sabíamos que estábamos destinados a estar juntos. A lo largo de los años hemos crecido y aprendido mucho, y estamos emocionados por todo lo que el futuro nos depara.</p>
-    
+
             <h3 class="mt-4">Agradecimientos</h3>
             <p class="mb-4">Queremos agradecer a nuestros padres, que siempre nos han apoyado y nos han mostrado el verdadero significado del amor. ¡Gracias por su amor incondicional!</p>
-            
+
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-6 col-md-5 mb-4">
-                    <h4><strong>Padres del Novio:</strong></h4>
-                    <ul class="list-unstyled">
-                        <li>Juan Pérez</li>
-                        <li>Ana García</li>
-                    </ul>
-                </div>
-                
                 <div class="col-12 col-sm-6 col-md-5 mb-4">
                     <h4><strong>Padres de la Novia:</strong></h4>
                     <ul class="list-unstyled">
-                        <li>Pedro Rodríguez</li>
-                        <li>Marta López</li>
+                        <li>Cecilia Flores Vázquez</li>
+                        <li>Eugenio Córdova Cruz</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-5 mb-4">
+                    <h4><strong>Padres del Novio:</strong></h4>
+                    <ul class="list-unstyled">
+                        <li>Mónica Olivo</li>
+                        <li>Gerardo Martínez Gaspar</li>
                     </ul>
                 </div>
             </div>
-    
-            <h3 class="mt-4">Padrinos</h3>
+
+            <h3 class="mt-4">Padrinos de Velación</h3>
             <ul class="list-unstyled">
-                <li>María González y Andrés Romero</li>
-                <li>Carmen Fernández y Luis Martínez</li>
+                <li>María Luisa Ortega Hernández</li>
+                <li>Mario López Martínez</li>
             </ul>
-    
+
             <p class="lead mt-4">Gracias a todos por ser parte de este día tan especial.</p>
         </div>
     </section>
-    
-    <!-- Foto de la pareja y detalles del evento -->
+
+    <!-- Detalles del evento -->
     <section class="detalles-evento text-center py-5">
-        <img src="imagenes/pareja_1.png" alt="Pareja" class="img-fluid" width="100%">
+        <div style="height: 400px; overflow: hidden;">
+            <img src="imagenes/pareja_2.jpg" alt="Pareja" class="img-fluid w-100" style="height: 100%; object-fit: cover; object-position: top;">
+        </div>
+
         <div class="container">
             <h2 class="display-4 mt-4">Detalles de la Boda</h2>
-            <p class="h4">Nombre de la Novia: Mariana López</p>
-            <p class="h4">Nombre del Novio: Carlos Pérez</p>
-            <p class="h4">Fecha: 15 de Junio de 2025</p>
-            <p class="h4">Hora: 17:00</p>
-            <p class="h4">Lugar: Iglesia San Juan, Ciudad</p>
+            <p class="h4">Novia: Ariana</p>
+            <p class="h4">Novio: Óscar</p>
+            <p class="h4">Fecha: 29 de Noviembre de 2025</p>
+            <p class="h4">Hora: 13:00</p>
+            <p class="h4">Lugar: Parroquia de San Juan Evangelista</p>
+            <p class="h5">
+            <a href="https://www.google.com/maps?q=Av.+Cdad.+de+las+Flores+70,+Revolución,+91100+Xalapa-Enríquez,+Ver." target="_blank" rel="noopener noreferrer">
+                Av. Cdad. de las Flores 70, Revolución, 91100 Xalapa-Enríquez, Ver.
+            </a>
+            </p>
         </div>
     </section>
 
-   <!-- Cuenta regresiva -->
+    <!-- Recepción -->
+    <section class="detalles-adicionales text-center py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4">Recepción</h2>
+            <p class="lead">Después de la ceremonia, acompáñanos a celebrar en:</p>
+            <p class="h4">Salón Campestre Acosta</p>
+            <p class="h5">
+            <a href="https://www.google.com/maps?q=Libertad+11,+Banderilla,+Veracruz" target="_blank" rel="noopener noreferrer">
+                Libertad #11, Banderilla
+            </a>
+            </p>
+
+    </section>
+
+    <!-- Cuenta regresiva -->
     <section class="contador text-center py-5 bg-light">
         <div class="container">
             <h2 class="display-4 mb-4">¡Faltan...</h2>
-            
-            <!-- Contador con los valores de días, horas, minutos y segundos -->
             <div id="contador" class="display-5 mb-4 d-flex flex-column flex-sm-row justify-content-center">
                 <div class="contador-item mx-4">
                     <p class="h2" id="dias">0</p>
@@ -100,18 +120,18 @@
                     <p class="h4">Segundos</p>
                 </div>
             </div>
-
-            <!-- Explicación debajo del contador -->
             <p class="lead mt-4">¡Cada segundo nos acerca más a nuestro día especial!</p>
         </div>
     </section>
 
-    <!-- Foto de la pareja -->
+        <!-- Imagen de la pareja -->
     <section class="image-pareja text-center py-5">
-        <img src="imagenes/pareja_1.png" alt="Pareja" class="img-fluid" width="100%">
+        <div style="height: 380px; overflow: hidden;">
+            <img src="imagenes/pareja_3.jpg" alt="Pareja" class="img-fluid w-100" style="height: 100%; object-fit: cover; object-position: bottom;">
+        </div>
     </section>
 
-   <!-- Detalles adicionales -->
+    <!-- Detalles adicionales -->
     <section class="detalles-adicionales text-center py-5 bg-light">
         <div class="container">
             <h2 class="display-4">Detalles del Evento</h2>
@@ -137,101 +157,17 @@
         </div>
     </section>
 
-    <!-- Itinerario detallado -->
-    <section class="itinerario text-center py-5">
-        <div class="container">
-            <h2 class="display-5 mb-4">Itinerario Detallado</h2>
-            <ul class="timeline">
-                <li class="timeline-item d-flex flex-column flex-md-row align-items-center mb-4">
-                    <div class="timeline-icon mb-3 mb-md-0">
-                        <i class="fas fa-clock" style="font-size: 2rem;"></i>
-                    </div>
-                    <div class="timeline-content ms-md-3">
-                        <h5>17:00 - Ceremonia</h5>
-                        <p>Inicia la ceremonia.</p>
-                    </div>
-                </li>
-                <li class="timeline-item d-flex flex-column flex-md-row align-items-center mb-4">
-                    <div class="timeline-icon mb-3 mb-md-0">
-                        <i class="fas fa-home" style="font-size: 2rem;"></i>
-                    </div>
-                    <div class="timeline-content ms-md-3">
-                        <h5>18:30 - Recepción</h5>
-                        <p>Bienvenida a los invitados.</p>
-                    </div>
-                </li>
-                <li class="timeline-item d-flex flex-column flex-md-row align-items-center mb-4">
-                    <div class="timeline-icon mb-3 mb-md-0">
-                        <i class="fas fa-music" style="font-size: 2rem;"></i>
-                    </div>
-                    <div class="timeline-content ms-md-3">
-                        <h5>19:00 - Vals</h5>
-                        <p>Comienza el baile tradicional.</p>
-                    </div>
-                </li>
-                <li class="timeline-item d-flex flex-column flex-md-row align-items-center mb-4">
-                    <div class="timeline-icon mb-3 mb-md-0">
-                        <i class="fas fa-utensils" style="font-size: 2rem;"></i>
-                    </div>
-                    <div class="timeline-content ms-md-3">
-                        <h5>20:00 - Comida</h5>
-                        <p>Disfruta de un banquete especial.</p>
-                    </div>
-                </li>
-                <li class="timeline-item d-flex flex-column flex-md-row align-items-center mb-4">
-                    <div class="timeline-icon mb-3 mb-md-0">
-                        <i class="fas fa-glass-cheers" style="font-size: 2rem;"></i>
-                    </div>
-                    <div class="timeline-content ms-md-3">
-                        <h5>21:30 - Fiesta</h5>
-                        <p>La fiesta comienza con música y baile.</p>
-                    </div>
-                </li>
-                <li class="timeline-item d-flex flex-column flex-md-row align-items-center mb-4">
-                    <div class="timeline-icon mb-3 mb-md-0">
-                        <i class="fas fa-door-open" style="font-size: 2rem;"></i>
-                    </div>
-                    <div class="timeline-content ms-md-3">
-                        <h5>23:59 - Fin</h5>
-                        <p>El evento llega a su fin.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    
-    <!-- Lluvia de sobres (referencias bancarias) -->
-    <section class="referencias-bancarias text-center py-5 bg-light">
-        <div class="container">
-            <h2 class="display-5">¡Gracias por tu Generosidad!</h2>
-            <p class="lead">Si deseas hacernos un regalo, aquí están nuestras referencias bancarias:</p>
-            
-            <div class="referencias">
-                <div class="referencia mb-4">
-                    <h4 class="h2">Referencia del Novio</h4>
-                    <p class="lead">Cuenta: xxxxx</p>
-                </div>
-                <div class="referencia mb-4">
-                    <h4 class="h2">Referencia de la Novia</h4>
-                    <p class="lead">Cuenta: xxxxx</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Esperamos tu asistencia -->
+    <!-- Mensaje de cierre -->
     <section class="esperamos text-center py-5">
         <div class="container">
             <h2 class="display-4">Esperamos tu Asistencia</h2>
-            <p class="lead">Nos hará muy felices contar con tu presencia en este día tan especial.</p>
+            <p class="lead">El destino, Dios y la vida nos juntaron y ahora permaneceremos unidos por siempre. El comienzo de esta nueva etapa inicia ahora y la queremos compartir contigo.</p>
         </div>
     </section>
 
-    <!-- Bootstrap JS y dependencias -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
     <script src="countdown.js"></script>
-    <script src="RutaAnimada.js"></script>
 </body>
 </html>
